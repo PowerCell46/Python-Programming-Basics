@@ -1,7 +1,7 @@
 #First task
 L = [24,3,5,15,2,2,14,1]
 M = L[:]
-M.sort()
+M.sort(reverse=True)
 M = [str(number) for number in M]
 print(f'This is the second list - the exact same at the previous, but in order: {" ".join(M)}')
 M_odd = [int(number) for ind, number in enumerate(M) if ind % 2 != 0]
